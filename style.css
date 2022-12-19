@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3, button{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.cabecalho{
+    padding: 40px 75px;
+}
+
+.cabecalho img{
+    width: 220px;
+}
+
+.section{
+    display: flex;
+    padding: 0px 75px;
+    margin-top: 50px;
+}
+
+.section img{
+    width: 720px;
+}
+
+.texto{
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.texto h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    width: 500px;
+}
+
+.texto p{
+    line-height: 25px;
+    margin-top: 20px;
+    width: 460px;
+}
+
+.btn{
+    text-transform: capitalize;
+    color:  hsl(257, 40%, 49%);
+    border-radius: 30px;
+    padding: 15px 60px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 15px;
+    box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.705);
+}
+
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.824);
+}
+
+.social-media{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 200px; 
+}
+
+.container-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+
+.container-icon:hover{
+    background-color: rgba(255, 255, 255, 0.162);
+}
+
+.icon-social{
+    font-size: 20px;
+}
+
+@media (max-width:375px){
+    body{
+        background-image: url(./images/bg-mobile.svg) cover;
+        background-repeat: no-repeat;
+    }
+    
+    .cabecalho{
+        padding: 30px 35px;
+        align-items: center;
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 35px;
+    }
+
+    .section img{
+        width: 330px;
+    }
+
+    .texto{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+        margin-right: 60px;
+    }
+
+    .texto h1{
+        font-size: 28px;
+        width: 350px;
+        text-align: center;
+    }
+    
+    .texto p{
+        width: 280px;
+        text-align: center;
+    }
+
+    .btn{
+        padding: 15px 80px;
+    }
+
+    .social-media{
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .container-icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        padding: 20px;
+    }
+}
+
+
